@@ -1,0 +1,17 @@
+apply plugin: 'com.android.application'
+
+apply from: '../../../../Misc/topLevel.gradle'
+
+android {
+    defaultConfig {
+        applicationId "edu.ksu.cs.benign"
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    apply from: '../../../../Misc/sdkFlavors.gradle'
+    apply from: '../../../../Misc/common.gradle'
+    apply from: '../../../../Misc/web-config.gradle'
+}
+
+apply from: '../../../../Misc/app-dependencies.gradle'
