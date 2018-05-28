@@ -1,0 +1,20 @@
+apply from: '../../../../Misc/topLevel.gradle'
+
+apply plugin: 'com.android.application'
+
+android {
+    defaultConfig {
+        applicationId "edu.ksu.cs.benign" // This should be same as the id of app to be tested
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    apply from: '../../../../Misc/sdkFlavors.gradle'
+}
+
+apply from: '../../../../Misc/test-dependencies.gradle'
+
+dependencies {
+    androidTestImplementation 'com.android.support.test.espresso:espresso-web:3.0.2'
+}
