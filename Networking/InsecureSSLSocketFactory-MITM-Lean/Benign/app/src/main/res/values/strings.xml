@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Benign</string>
+    <string name="url_extension">/test/</string>
+</resources>
